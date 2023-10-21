@@ -60,9 +60,9 @@ fi
 
 cd /home/ec2-user
 
-git clone -b develop https://github.com/lewinCM/chat-app.git
+git clone -b develop https://github.com/lewinCM/chatty-backend.git
 cd chatty-backend
-npm install  
+npm install
 aws s3 sync s3://chattyapp-env-filess/develop .
 unzip env-file.zip
 cp .env.develop .env
